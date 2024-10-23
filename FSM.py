@@ -98,6 +98,8 @@ class MusicPlayerFSM:
         self.state_label = tk.Label(self.root, font=self.header_font)
         self.state_label.pack(pady=10)
 
+        self.state_label.config(text=f"State: {self.state}")
+        
         button_frame = tk.Frame(root)
         button_frame.pack(side='bottom', anchor='sw', padx=10, pady=10)
 
